@@ -1,0 +1,17 @@
+{
+    "description": "Artidex capture of ChatGPT Sites deploys. Off unless plugin.json names this file; set the matcher and the settings in scripts/capture.sh from the probe first.",
+    "hooks": {
+        "PostToolUse": [
+            {
+                "matcher": "^ARTIDEX_SET_AFTER_PROBE$",
+                "hooks": [
+                    {
+                        "type": "command",
+                        "command": "sh \"${PLUGIN_ROOT}/scripts/capture.sh\"",
+                        "timeout": 8
+                    }
+                ]
+            }
+        ]
+    }
+}

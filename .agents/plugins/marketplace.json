@@ -1,0 +1,20 @@
+{
+    "name": "artidex",
+    "interface": {
+        "displayName": "Artidex"
+    },
+    "plugins": [
+        {
+            "name": "artidex",
+            "source": {
+                "source": "local",
+                "path": "./codex"
+            },
+            "policy": {
+                "installation": "AVAILABLE",
+                "authentication": "ON_INSTALL"
+            },
+            "category": "Productivity"
+        }
+    ]
+}

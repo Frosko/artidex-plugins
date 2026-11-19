@@ -1,0 +1,21 @@
+{
+    "$schema": "https://antigravity.google/schemas/v1/plugin.json",
+    "name": "artidex",
+    "displayName": "Artidex",
+    "version": "0.1.4",
+    "description": "Files the Gemini share links and AI Studio apps you paste into Artidex, in any of your teams. Sends links and labels only, never content.",
+    "logo": "assets/logo.svg",
+    "suggestedPrompts": [
+        "File these Gemini share links in Artidex",
+        "Sort my Artidex Inbox into projects",
+        "Am I connected to Artidex?"
+    ],
+    "author": {
+        "name": "Artidex",
+        "url": "https://artidex.app"
+    },
+    "homepage": "https://artidex.app",
+    "repository": "https://github.com/frosko/artidex-plugins",
+    "license": "MIT",
+    "keywords": ["artifacts", "documentation", "mcp"]
+}

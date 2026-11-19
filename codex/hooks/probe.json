@@ -1,0 +1,16 @@
+{
+    "description": "Artidex probe. Off unless plugin.json names this file. Logs tool names, key names and web-address hosts to ~/.codex/artidex-probe.log; never values. Sends nothing.",
+    "hooks": {
+        "PostToolUse": [
+            {
+                "hooks": [
+                    {
+                        "type": "command",
+                        "command": "sh \"${PLUGIN_ROOT}/scripts/probe.sh\"",
+                        "timeout": 5
+                    }
+                ]
+            }
+        ]
+    }
+}

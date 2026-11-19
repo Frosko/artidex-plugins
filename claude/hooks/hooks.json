@@ -1,0 +1,24 @@
+{
+    "hooks": {
+        "PostToolUse": [
+            {
+                "matcher": "Artifact",
+                "hooks": [
+                    {
+                        "type": "mcp_tool",
+                        "if": "Artifact(file_path:*)",
+                        "server": "plugin:artidex:artidex",
+                        "tool": "capture-artifact",
+                        "input": {
+                            "url": "${tool_response.url}",
+                            "title": "${tool_response.title}",
+                            "description": "${tool_input.description}",
+                            "action": "${tool_input.action}"
+                        },
+                        "timeout": 10
+                    }
+                ]
+            }
+        ]
+    }
+}

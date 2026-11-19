@@ -1,0 +1,25 @@
+{
+    "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+    "name": "artidex",
+    "version": "0.1.5",
+    "description": "Lets your Codex assistant file links into Artidex, in any of your teams: the ChatGPT Sites and share links you give it. Sends links and labels only, never content.",
+    "author": {
+        "name": "Artidex",
+        "url": "https://artidex.app"
+    },
+    "homepage": "https://artidex.app",
+    "repository": "https://github.com/frosko/artidex-plugins",
+    "license": "MIT",
+    "keywords": ["artifacts", "documentation", "mcp"],
+    "extensions": {
+        "com.openai": {
+            "interface": {
+                "displayName": "Artidex",
+                "shortDescription": "File links into your Artidex teams",
+                "developerName": "Artidex",
+                "category": "Productivity",
+                "websiteURL": "https://artidex.app"
+            }
+        }
+    }
+}

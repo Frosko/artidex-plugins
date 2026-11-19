@@ -1,0 +1,28 @@
+{
+    "description": "Alternative to capture.json without a token: Codex calls Artidex's register-artifacts over the plugin's signed-in MCP connection. Off unless plugin.json names this file; set the matcher and both field paths from the probe first.",
+    "hooks": {
+        "PostToolUse": [
+            {
+                "matcher": "^ARTIDEX_SET_AFTER_PROBE$",
+                "hooks": [
+                    {
+                        "type": "mcp_tool",
+                        "server": "artidex",
+                        "tool": "register-artifacts",
+                        "input": {
+                            "artifacts": [
+                                {
+                                    "url": "${tool_response.structuredContent.url}",
+                                    "title": "${tool_response.structuredContent.title}",
+                                    "mine": true
+                                }
+                            ]
+                        },
+                        "timeout": 10,
+                        "statusMessage": "Recording the site in Artidex"
+                    }
+                ]
+            }
+        ]
+    }
+}

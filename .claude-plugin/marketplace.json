@@ -1,0 +1,14 @@
+{
+    "name": "artidex",
+    "description": "Claude Code plugin for Artidex, a team index of links to AI-published artifacts.",
+    "owner": {
+        "name": "Artidex"
+    },
+    "plugins": [
+        {
+            "name": "artidex",
+            "source": "./claude",
+            "description": "Records every artifact you publish from Claude Code in Artidex, and lets your assistant import and organise your artifact gallery in any of your teams."
+        }
+    ]
+}

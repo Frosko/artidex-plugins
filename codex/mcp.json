@@ -1,0 +1,12 @@
+{
+    "$schema": "https://agent-plugins.org/schemas/1.0.0/mcp.schema.json",
+    "mcpServers": {
+        "artidex": {
+            "type": "streamable-http",
+            "url": "https://artidex.app/mcp",
+            "headers": {
+                "X-Artidex-Client": "codex-plugin/0.1.5"
+            }
+        }
+    }
+}

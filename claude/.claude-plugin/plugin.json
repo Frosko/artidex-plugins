@@ -1,0 +1,15 @@
+{
+    "name": "artidex",
+    "displayName": "Artidex",
+    "version": "0.3.1",
+    "description": "Records every artifact you publish from Claude Code in Artidex, and lets your assistant import and organise your artifact gallery in any of your teams. Signs in through your browser; sends links and labels only, never artifact content.",
+    "author": {
+        "name": "Artidex",
+        "url": "https://artidex.app"
+    },
+    "homepage": "https://artidex.app",
+    "repository": "https://github.com/frosko/artidex-plugins",
+    "license": "MIT",
+    "privacyPolicyUrl": "https://artidex.app/privacy",
+    "keywords": ["artifacts", "documentation", "mcp"]
+}
