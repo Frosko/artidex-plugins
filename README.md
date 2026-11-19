@@ -10,11 +10,11 @@ your browser and no plugin asks for a password, a token or an address.
 
 ## Install
 
-| Tool               | Install                                                                                                           | Details                                       |
-| ------------------ | ----------------------------------------------------------------------------------------------------------------- | --------------------------------------------- |
-| Claude Code        | `/plugin marketplace add frosko/artidex-plugins`, then `/plugin install artidex@artidex`                          | [claude/](claude/README.md)                   |
-| Codex              | `codex plugin marketplace add frosko/artidex-plugins`, then install **Artidex** from the Plugins Directory        | [codex/](codex/README.md)                     |
-| Google Antigravity | `agy plugin install https://github.com/frosko/artidex-plugins`                                                    | [Antigravity](.antigravity-plugin/README.md) |
+| Tool               | Install                                                                                                    | Details                                      |
+| ------------------ | ---------------------------------------------------------------------------------------------------------- | -------------------------------------------- |
+| Claude Code        | `/plugin marketplace add frosko/artidex-plugins`, then `/plugin install artidex@artidex`                   | [claude/](claude/README.md)                  |
+| Codex              | `codex plugin marketplace add frosko/artidex-plugins`, then install **Artidex** from the Plugins Directory | [codex/](codex/README.md)                    |
+| Google Antigravity | `agy plugin install https://github.com/frosko/artidex-plugins`                                             | [Antigravity](.antigravity-plugin/README.md) |
 
 Then sign in from the tool: `/artidex:connect` in Claude Code, **Authenticate** for the Artidex
 server in Codex and Antigravity. The **Connect** page of your Artidex account shows the same steps
@@ -35,8 +35,9 @@ there you give your assistant the links.
 
 Links, titles and the filing you approve. No plugin opens or downloads a page, and none sends a
 working directory, a repository or a session. Nothing runs when a session starts or when you send
-a message: a plugin calls Artidex only when you publish (Claude Code) or when you ask. Each
-package's page lists exactly what leaves your machine.
+a message: a plugin calls Artidex only when your assistant uses its publishing tool (Claude Code;
+a link is sent only for a publish) or when you ask. Each package's page lists exactly what leaves
+your machine.
 
 - Privacy: <https://artidex.app/privacy>
 - Questions and problems: <https://artidex.app/contact>

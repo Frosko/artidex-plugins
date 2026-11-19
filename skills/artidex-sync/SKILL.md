@@ -1,6 +1,6 @@
 ---
 name: artidex-sync
-description: Register Gemini share links and AI Studio app links in Artidex and file them into the projects and sections of the user's teams. Use when the user asks to add, record, file, sort or tidy links in Artidex, or to sort the Artidex Inbox.
+description: Register Gemini share links, AI Studio app links and other AI-published links in Artidex and file them into the projects and sections of the user's teams. Use when the user asks to add, record, file, sort or tidy links in Artidex, or to sort the Artidex Inbox.
 ---
 
 # Organise links in Artidex

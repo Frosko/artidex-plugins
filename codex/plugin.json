@@ -1,7 +1,7 @@
 {
     "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
     "name": "artidex",
-    "version": "0.1.5",
+    "version": "0.1.6",
     "description": "Lets your Codex assistant file links into Artidex, in any of your teams: the ChatGPT Sites and share links you give it. Sends links and labels only, never content.",
     "author": {
         "name": "Artidex",

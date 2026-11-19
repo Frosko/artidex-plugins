@@ -74,20 +74,21 @@ the event:
 | -------------------------- | ---------------------------------------------------- |
 | `url`, `title`             | the artifact link and its title                      |
 | `description`              | only when the publish sets one                       |
-| `action`                   | empty or `publish`                                   |
+| `action`                   | empty or `publish`; the name of any other use        |
 | `X-Artidex-Project` header | the id of the project you tied the folder to, if any |
 | `X-Artidex-Client` header  | `claude-plugin/<version>`                            |
 
-A read, a listing, opening, pinning or deleting calls nothing: Claude Code checks the hook's
-condition on your machine (`if`: `Artifact(file_path:*)`; only a publish names a file to publish).
-Should another use ever arrive, Artidex answers "not a publish" and stores nothing.
+Claude Code runs the hook after every use of the Artifact tool: it cannot tell a publish from
+another use before calling. For a read, a listing, opening, pinning or deleting, the event has no
+link, title or description to send, so the call carries only the name of the use in `action`;
+Artidex answers "not a publish" and stores nothing.
 **Never sent:** your working directory or its name, a git remote, the session id, the page HTML,
 edit fragments, a listing of your gallery, the local file that was published, the transcript, or
 anything else in the event. No script of the plugin talks to Artidex.
 
 **Your gallery** is sent only when you run `/artidex:sync`: Claude lists it and registers the
 links, titles and dates through the Artidex tools. Listing your artifacts for any other reason
-sends nothing. The plugin runs nothing when a session starts and nothing when you send a message,
+sends none of them. The plugin runs nothing when a session starts and nothing when you send a message,
 and never adds anything to your conversations by itself.
 
 **A tied folder.** `/artidex:init` writes one small file in the plugin's data folder

@@ -3,7 +3,7 @@
         "artidex": {
             "url": "https://artidex.app/mcp",
             "headers": {
-                "X-Artidex-Client": "antigravity-plugin/0.1.4"
+                "X-Artidex-Client": "antigravity-plugin/0.1.5"
             }
         }
     }

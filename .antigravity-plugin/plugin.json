@@ -2,7 +2,7 @@
     "$schema": "https://antigravity.google/schemas/v1/plugin.json",
     "name": "artidex",
     "displayName": "Artidex",
-    "version": "0.1.4",
+    "version": "0.1.5",
     "description": "Files the Gemini share links and AI Studio apps you paste into Artidex, in any of your teams. Sends links and labels only, never content.",
     "logo": "assets/logo.svg",
     "suggestedPrompts": [

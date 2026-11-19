@@ -6,7 +6,6 @@
                 "hooks": [
                     {
                         "type": "mcp_tool",
-                        "if": "Artifact(file_path:*)",
                         "server": "plugin:artidex:artidex",
                         "tool": "capture-artifact",
                         "input": {
